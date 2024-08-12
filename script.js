@@ -1,7 +1,7 @@
 //text animation
 var typed = new Typed("#Name", {
-    strings: ['Nikhil',' And a WEB DEVLOPER', 'And a WEB DESIGNER', 'And a VIDEO EIDTOR'],
-    typeSpeed: 150,loop: true
+    strings: ['A WEB DEVLOPER', 'A WEB DESIGNER', 'And a VIDEO EIDTOR'],
+    typeSpeed: 120,loop: true
   });
   //
 let active = document.querySelectorAll('.value');
