@@ -12,7 +12,7 @@
 
 <body>
 
-<header class="header">
+<header class="header "></header>
     <nav id="nav" class="navbar background">
 
         <div class="left-nav">
@@ -29,14 +29,19 @@
 
         </div>
         <button id="btn-ham" class="hamburger">
+           <div class="icon-open">
             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+           </div>
+           <div class="icon-close">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+           </div>
         </button>
     </nav>
-</header>
+
     <section id="home" class="intro background">
 
         <div class="name">
-            <h1 class="heading"><span class="highlite">_</span>Hi, I'm <span class="highlite">Nikhil</span></h1>
+            <h1 class="heading"><span class="highlite">_</span>Hi, I'm <span id="Name" class="highlite"></span></h1>
             <h2 class="about">I'm a Full Stack Web Developer & a self-proclaimed Singer.</h2>
             <div class="links">
                 <a class="link linkedin" title="Linkedin" href="https://www.linkedin.com/in/nikhil-yadav-287949251/"
@@ -94,7 +99,7 @@
                     </div>
                 </div>
                 <div class="me">
-                    <p>Currently pursuing a Bachelor's degree in BCA from Guru Gobind Singh Indraprastha
+                    <p class="info">Currently pursuing a Bachelor's degree in BCA from Guru Gobind Singh Indraprastha
                         University. Equipped with strong skills in HTML5, CSS3 and JavaScript, and hands-on
                         experience through multiple web development projects. Skilled in creating responsive and
                         user-friendly web interfaces. Proven ability to work in a team and solve problems efficiently.
@@ -111,7 +116,7 @@
         <p class="head">Explor My</p>
         <h1>Experience</h1>
         <div class="experience-details">
-            <div class="about-heading">
+            <div class="about-heading ex-about">
                 <div class="ex">
                     <h2 class="ex-subtitle">
                         Technical skills
@@ -235,6 +240,7 @@
         <div class="foot-container">
             <p>Copyright &copy; 2024 Nikhil yadav All Rights Reserved</p>
         </body>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <script src="script.js"></script>
 
 </html>
