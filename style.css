@@ -7,6 +7,11 @@
     /* overflow: hidden; */
 }
 
+:root{
+  --primary-color: #161212;
+    --secondary-color: #ffffff; 
+    --third-color: rgb(103, 103, 103);
+}
 html {
     scroll-behavior: smooth;
 
@@ -19,7 +24,7 @@ body::-webkit-scrollbar {
 
 body {
     font-family: "Poppins", sans-serif;
-    color: #fff;
+    color: var(--primary-color);
 
 
 }
@@ -37,7 +42,7 @@ min-height: 100%; */
     min-width: 100%;
     display: flex;
     position: fixed;
-    background-color: #161212;
+    background-color: var(--secondary-color);
 
     z-index: 1;
 }
@@ -77,17 +82,17 @@ li {
 
 li a {
     text-decoration: none;
-    color: #fff;
+    color: var(--primary-color);
 
 }
 
 .active {
-    color: #ffc514;
+    color: var(--third-color);
 }
 
 li a:hover {
 
-    color: #ffc514;
+    color: var(--third-color);
     text-decoration: underline;
 }
 
@@ -97,13 +102,13 @@ li a:hover {
     top: 20px;
 
     border: unset;
-    background: #161212;
+    background: var(--secondary-color);
     cursor: pointer;
     transform: scale(1.5);
 }
 
 .navbar .hamburger svg {
-    stroke: #fff;
+    stroke: var(--primary-color);
 }
 
 .navbar .hamburger .icon-close {
@@ -111,7 +116,7 @@ li a:hover {
 }
 
 .background {
-    background-color: #161212;
+    background-color: var(--secondary-color);
     background-size: cover;
     background-blend-mode: darken;
 }
@@ -144,11 +149,11 @@ li a:hover {
 
 .highlite,
 .dot {
-    color: #ffc514;
+    color: var(--third-color);
 }
 #Name{
 display: block;
-color: #fff;
+color: var(--primary-color);
 }
 
 .about {
@@ -170,7 +175,7 @@ color: #fff;
 
 .profile:hover {
     border-radius: 50%;
-    filter: drop-shadow(5px 5px 2rem #ffc514);
+    /* filter: drop-shadow(5px 5px 2rem var(--third-color)); */
     /* transform: scale(1.5); */
 
 
@@ -194,7 +199,7 @@ section .links a i {
 }
 
 section .links a i:hover {
-    color: #ffc514;
+    color: var(--third-color);
     transform: scale(1.2);
 }
 
@@ -203,7 +208,7 @@ section .links a {
     display: inline-block;
     margin: 10px 5px;
     text-decoration: none;
-    color: #fff;
+    color: var(--primary-color);
 
 }
 
@@ -279,7 +284,7 @@ h1,
 
 .my-pic:hover {
     border-radius: 40%;
-    filter: drop-shadow(5px 5px 2rem #ffc514);
+    /* filter: drop-shadow(5px 5px 2rem var(--third-color)); */
 
 
 
@@ -288,7 +293,7 @@ h1,
 .detail {
 
 
-    color: #fff;
+    color: var(--primary-color);
 }
 
 .about-heading {
@@ -390,14 +395,14 @@ section .contact-container a {
     display: inline-block;
     margin: 10px 5px;
     text-decoration: none;
-    color: #fff;
+    color: var(--primary-color);
     transition: all 0.3s ease;
 
 }
 
 section .contact-container a i:hover,
 section .contact-container a:hover {
-    color: #ffc514;
+    color: var(--third-color);
     
 }
 
@@ -413,8 +418,8 @@ section .contact-container a:hover {
 /*foter*/
 .foot-container {
     text-align: center;
-    background-color: #161212;
-    color: #ffffff80;
+    background-color: var(--secondary-color);
+    color: var(--primary-color)fff80;
     padding-bottom: 1rem;
     position: relative;
     top: 5rem;
@@ -502,8 +507,8 @@ max-width: 15%;
 /* min-height: 10%; */
 border-radius:50% ;
 text-align: center;
-/* border: 2px solid #fff; */
-filter: drop-shadow(5px 5px 5.5rem #ffc514);
+/* border: 2px solid var(--primary-color); */
+filter: drop-shadow(5px 5px 5.5rem var(--third-color));
 
     }
    
