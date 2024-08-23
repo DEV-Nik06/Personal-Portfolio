@@ -308,7 +308,9 @@ h1,
 
     padding: 2rem;
     flex: 1;
-    background: rgba(255, 255, 255, 0.089);
+    
+    /* background: rgba(255, 255, 255, 0.089); */
+    /* backdrop-filter: blur(10px); */
     border-radius: 2rem;
     border: rgb(83, 81, 81) 0.1rem solid;
     border-color: rgb(163, 163, 163);
