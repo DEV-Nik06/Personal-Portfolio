@@ -88,6 +88,7 @@ li a {
 
 .active {
     color: var(--third-color);
+    font-weight: 800;
 }
 
 li a:hover {
