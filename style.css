@@ -8,9 +8,9 @@
 }
 
 :root {
-    --primary-color: #161212;
-    --secondary-color: #ffffff;
-    --third-color: rgb(103, 103, 103);
+    --primary-color: #1F2833;
+    --secondary-color: #cbcbcb;
+    --third-color: #4d4e4f;
 }
 
 .dark-theme {
@@ -19,7 +19,7 @@
 
     --secondary-color: #1f1d1d;
 
-    --third-color: rgba(167, 144, 144, 0.637);
+    --third-color: #C5C6C7;
 }
 
 html {
