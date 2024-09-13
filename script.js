@@ -13,18 +13,26 @@ active.forEach(navLinks=>{
     })
 })
 //
-let hamburger = document.getElementById('btn-ham');
-let navbar = document.getElementById('nav');
-hamburger.addEventListener('click',onHamClick);
-let logo = document.querySelector('.left-nav');
-function onHamClick(e) {
-    if (!navbar.classList.contains('open')) {
-        
-        navbar.classList.toggle('open');
-        logo.classList.add('img')
-    }else{
-        navbar.classList.remove('open');
+const hamburgerBtn = document.getElementById('btn-ham');
+const navbar = document.getElementById('nav');
+
+hamburgerBtn.addEventListener('click', () => {
+  navbar.classList.toggle('open'); // Toggle open/close class on the navbar
+});
+
+
+let themeIcon = document.querySelector('#themeIcon');
+
+themeIcon.addEventListener('click', function(e){
+    document.body.classList.toggle("dark-theme");
+
+    if(document.body.classList.contains("dark-theme")){
+        themeIcon.innerHTML = '<i class="fas fa-lg fa-sun"></i>';
+        themeIcon.title = "Light-Mode"
     }
-}
+    else{
+        themeIcon.innerHTML = '<i class="fas fa-lg fa-moon"></i>';
 
+    }
 
+})
