@@ -83,7 +83,7 @@ body {
 
 
 .right-nav {
-    min-width: 80%;
+    min-width: 70%;
     text-align: center;
 
 }
@@ -96,6 +96,7 @@ body {
     align-items: center;
 
 }
+
 
 li {
     font-size: 1.2rem;
@@ -110,18 +111,76 @@ li a {
 
 }
 
-#themeIcon {
+.corner-nav{
+    max-width: 10% ;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 6px;
+}
+/* #themeIcon {
 
     position: relative;
     left: 0rem;
     top: 0;
-}
+} */
 
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 29px;
+}
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+background: #000;
+} 
+.slider{
+position: absolute;
+background: var(--third-color);
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+-webkit-transition: .4s;
+transition: .4s;
+/* border-radius: 50%; */
+}
+.slider:before {
+position: absolute;
+content: "";
+height: 20px;
+width: 20px;
+left: 4px;
+bottom: 5px;
+background-color: var(--secondary-color);
+-webkit-transition: .4s;
+transition: .4s;
+}
+input:checked + .slider {
+background-color: var(--third-color);
+}
+input:focus + .slider {
+box-shadow: 0 0 5px var(--secondary-color);
+}
+input:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
+}
+.slider.round {
+border-radius: 34px;
+}
+.slider.round:before {
+border-radius: 50%;
+}
 #themeIcon i {
+    
     color: var(--primary-color);
-    text-shadow: 3px 3px 10px #00000060;
-    transition: all 0.2s linear;
-    font-size: 2.5rem;
+    font-size: inherit;
     cursor: pointer;
 }
 
@@ -465,12 +524,13 @@ section .contact-container a:hover {
 }
 
 
-@media screen and (max-width:760px) {
+@media screen and (max-width:942px) {
     .navbar{
         transition: all 0.3s ease; 
     }
     .navbar.open {
         display: grid;
+        height: 80vh;
 
     }
 
@@ -539,13 +599,17 @@ section .contact-container a:hover {
     }
   
     
-    
-    #themeIcon {
-
-        position: relative;
-        left: 0;
-        top: 0;
+    .navbar .corner-nav {
+        display: none;
+        
     }
+    .navbar.open .corner-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 100%;
+    }
+   
 
     .my-pic {
         transform: scale(2.5);
@@ -590,7 +654,7 @@ section .contact-container a:hover {
 
 }
 
-@media screen and (min-width:761px) {
+@media screen and (min-width:942px) {
     .navbar .hamburger {
         display: none;
     }

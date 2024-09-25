@@ -21,18 +21,18 @@ hamburgerBtn.addEventListener('click', () => {
 });
 
 
-let themeIcon = document.querySelector('#themeIcon');
 
-themeIcon.addEventListener('click', function(e){
-    document.body.classList.toggle("dark-theme");
 
-    if(document.body.classList.contains("dark-theme")){
-        themeIcon.innerHTML = '<i class="fas fa-lg fa-sun"></i>';
-        themeIcon.title = "Light-Mode"
-    }
-    else{
-        themeIcon.innerHTML = '<i class="fas fa-lg fa-moon"></i>';
+let check = document.querySelector('#check-inp');
+check.addEventListener('click',function(e){
+    check.classList.add('checked')
 
-    }
+
+    if (check.classList.contains("checked")) {
+        document.body.classList.toggle("dark-theme");
+        
+    } 
+
+    
 
 })
